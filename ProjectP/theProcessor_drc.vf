@@ -1,0 +1,169 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : theProcessor_drc.vf
+// /___/   /\     Timestamp : 05/13/2018 10:49:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family xa9500xl -verilog theProcessor_drc.vf -w "C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor.sch"
+//Design Name: theProcessor
+//Device: xa9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module theProcessor(clk, 
+                    rst, 
+                    inst, 
+                    m0, 
+                    m4, 
+                    m8, 
+                    m12, 
+                    m16, 
+                    s0, 
+                    s1, 
+                    s2, 
+                    t0, 
+                    t1, 
+                    t2);
+
+    input clk;
+    input rst;
+   output [31:0] inst;
+   output [31:0] m0;
+   output [31:0] m4;
+   output [31:0] m8;
+   output [31:0] m12;
+   output [31:0] m16;
+   output [31:0] s0;
+   output [31:0] s1;
+   output [31:0] s2;
+   output [31:0] t0;
+   output [31:0] t1;
+   output [31:0] t2;
+   
+   wire [1:0] ALUOp;
+   wire ALUSrc;
+   wire [31:0] ALU_result;
+   wire Branch;
+   wire [3:0] ctrl_add;
+   wire [31:0] extended_inst;
+   wire MemRead;
+   wire MemtoReg;
+   wire MemWrite;
+   wire [31:0] pc_next;
+   wire [31:0] pc_now;
+   wire [31:0] Read_memory;
+   wire [31:0] Read_reg1;
+   wire [31:0] Read_reg2;
+   wire RegDst;
+   wire RegWrite;
+   wire [31:0] write_data;
+   wire [4:0] write_reg;
+   wire [31:0] XLXN_63;
+   wire [31:0] XLXN_66;
+   wire [3:0] XLXN_101;
+   wire [31:0] XLXN_132;
+   wire XLXN_137;
+   wire XLXN_139;
+   wire [31:0] XLXN_144;
+   wire [31:0] inst_DUMMY;
+   
+   assign inst[31:0] = inst_DUMMY[31:0];
+   PC  XLXI_1 (.clk(clk), 
+              .pc_next(pc_next[31:0]), 
+              .rst(rst), 
+              .pc_now(pc_now[31:0]));
+   Instruction_Memory  XLXI_2 (.clk(clk), 
+                              .read_address(pc_now[31:0]), 
+                              .rst(rst), 
+                              .inst(inst_DUMMY[31:0]));
+   Sign_extend  XLXI_10 (.inst(inst_DUMMY[15:0]), 
+                        .extended_inst(extended_inst[31:0]));
+   ALU  XLXI_12 (.ALUCtrl(XLXN_101[3:0]), 
+                .input1(Read_reg1[31:0]), 
+                .input2(XLXN_63[31:0]), 
+                .ALU_result(XLXN_66[31:0]), 
+                .zero(XLXN_137));
+   Control  XLXI_15 (.opCode(inst_DUMMY[31:26]), 
+                    .ALUOp(ALUOp[1:0]), 
+                    .ALUSrc(ALUSrc), 
+                    .Branch(Branch), 
+                    .MemRead(MemRead), 
+                    .MemtoReg(MemtoReg), 
+                    .MemWrite(MemWrite), 
+                    .RegDst(RegDst), 
+                    .RegWrite(RegWrite));
+   Mux5  XLXI_16 (.input_h(inst_DUMMY[15:11]), 
+                 .input_l(inst_DUMMY[20:16]), 
+                 .sel(RegDst), 
+                 .mux_output(write_reg[4:0]));
+   Mux32  XLXI_20 (.input_h(extended_inst[31:0]), 
+                  .input_l(Read_reg2[31:0]), 
+                  .sel(ALUSrc), 
+                  .mux_output(XLXN_63[31:0]));
+   Mux32  XLXI_22 (.input_h(Read_memory[31:0]), 
+                  .input_l(XLXN_66[31:0]), 
+                  .sel(MemtoReg), 
+                  .mux_output(write_data[31:0]));
+   ALU_control  XLXI_23 (.ALUOp(ALUOp[1:0]), 
+                        .clk(clk), 
+                        .funct(inst_DUMMY[5:0]), 
+                        .rst(rst), 
+                        .ALUCtrl(XLXN_101[3:0]));
+   add4_32  XLXI_24 (.add_input(pc_now[31:0]), 
+                    .add_output(XLXN_132[31:0]));
+   ALU  XLXI_26 (.ALUCtrl(ctrl_add[3:0]), 
+                .input1(XLXN_132[31:0]), 
+                .input2(XLXN_144[31:0]), 
+                .ALU_result(ALU_result[31:0]), 
+                .zero());
+   VCC  XLXI_27 (.P(ctrl_add[1]));
+   GND  XLXI_28 (.G(ctrl_add[3]));
+   GND  XLXI_31 (.G(ctrl_add[2]));
+   GND  XLXI_32 (.G(ctrl_add[0]));
+   Mux32  XLXI_33 (.input_h(ALU_result[31:0]), 
+                  .input_l(XLXN_132[31:0]), 
+                  .sel(XLXN_139), 
+                  .mux_output(pc_next[31:0]));
+   AND2  XLXI_34 (.I0(XLXN_137), 
+                 .I1(Branch), 
+                 .O(XLXN_139));
+   Shift_left_2  XLXI_35 (.sl_input(extended_inst[31:0]), 
+                         .sl_output(XLXN_144[31:0]));
+   Data_memory  XLXI_37 (.Address(XLXN_66[31:0]), 
+                        .clk(clk), 
+                        .MemRead(MemRead), 
+                        .MemWrite(MemWrite), 
+                        .rst(rst), 
+                        .Write_data(Read_reg2[31:0]), 
+                        .m0(m0[31:0]), 
+                        .m4(m4[31:0]), 
+                        .m8(m8[31:0]), 
+                        .m12(m12[31:0]), 
+                        .m16(m16[31:0]), 
+                        .Read_data(Read_memory[31:0]));
+   Registers  XLXI_38 (.clk(clk), 
+                      .read_reg1(inst_DUMMY[25:21]), 
+                      .read_reg2(inst_DUMMY[20:16]), 
+                      .RegWrite(RegWrite), 
+                      .rst(rst), 
+                      .write_data(write_data[31:0]), 
+                      .write_reg(write_reg[4:0]), 
+                      .read_data1(Read_reg1[31:0]), 
+                      .read_data2(Read_reg2[31:0]), 
+                      .s0(s0[31:0]), 
+                      .s1(s1[31:0]), 
+                      .s2(s2[31:0]), 
+                      .t0(t0[31:0]), 
+                      .t1(t1[31:0]), 
+                      .t2(t2[31:0]));
+endmodule

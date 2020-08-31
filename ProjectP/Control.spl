@@ -1,0 +1,15 @@
+[Inputs]
+=opCode[5:0]=
+[Outputs]
+RegDst
+ALUSrc
+MemtoReg
+RegWrite
+MemRead
+MemWrite
+Branch
+=ALUOp[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Control
+

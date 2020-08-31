@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/xst"
+elaborate
+-ifn Data_memory.prj
+-ifmt mixed

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/PC.v} -lang verilog -prj ProjectP -o PC.spl -module PC -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl PC.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/PC.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/PC.v} -lang verilog -prj ProjectP -o PC.spl -module PC -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl PC.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/PC.sym} 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/ALU.v} -lang verilog -prj ProjectP -o ALU.spl -module ALU -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl ALU.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/ALU.sym} 

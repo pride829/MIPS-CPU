@@ -1,0 +1,18 @@
+[Inputs]
+clk
+rst
+MemWrite
+MemRead
+=Address[31:0]=
+=Write_data[31:0]=
+[Outputs]
+=Read_data[31:0]=
+=m0[31:0]=
+=m4[31:0]=
+=m8[31:0]=
+=m12[31:0]=
+=m16[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Data_memory
+

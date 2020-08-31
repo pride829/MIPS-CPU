@@ -1,0 +1,8 @@
+[Inputs]
+=inst[15:0]=
+[Outputs]
+=extended_inst[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Sign_extend
+

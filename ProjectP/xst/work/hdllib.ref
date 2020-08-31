@@ -1,0 +1,10 @@
+MO Data_memory NULL Data_memory.v vlg2A/_data__memory.bin 1526138598
+MO Control NULL Control.v vlg41/_control.bin 1526138592
+MO Registers NULL Registers.v vlg20/_registers.bin 1526179294
+MO ALU_control NULL ALU_control.v vlg7E/_a_l_u__control.bin 1526138585
+MO Mux32 NULL Mux.v vlg07/_mux32.bin 1526139947
+MO Mux5 NULL Mux5.v vlg13/_mux5.bin 1526139906
+MO add4_32 NULL add32.v vlg1D/add4__32.bin 1526140629
+MO Instruction_Memory NULL Instruction_Memory.v vlg22/_instruction___memory.bin 1526138604
+MO Shift_left_2 NULL Shift_left_2.v vlg3D/_shift__left__2.bin 1526138640
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1526138577

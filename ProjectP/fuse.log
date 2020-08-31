@@ -1,0 +1,48 @@
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor_theProcessor_sch_tb_isim_beh.exe -prj C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor_theProcessor_sch_tb_beh.prj work.theProcessor_theProcessor_sch_tb work.glbl 
+ISim O.61xd (signature 0x6dd86d03)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Sign-extend.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Shift_left_2.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/PC.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Mux5.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Mux.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Instruction_Memory.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Data_memory.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Control.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/ALU_control.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/ALU.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/add32.v\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor.vf\" into library work
+Analyzing Verilog file \"C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/p_tb.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 185948 KB
+Fuse CPU Usage: 250 ms
+Compiling module PC
+Compiling module Instruction_Memory
+Compiling module Sign_extend
+Compiling module ALU
+Compiling module Control
+Compiling module Mux5
+Compiling module Mux32
+Compiling module ALU_control
+Compiling module add4_32
+Compiling module VCC
+Compiling module GND
+Compiling module AND2
+Compiling module Shift_left_2
+Compiling module Data_memory
+Compiling module Registers
+Compiling module theProcessor
+Compiling module theProcessor_theProcessor_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor_theProcessor_sch_tb_isim_beh.exe
+Fuse Memory Usage: 194116 KB
+Fuse CPU Usage: 436 ms

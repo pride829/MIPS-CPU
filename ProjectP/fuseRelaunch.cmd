@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor_theProcessor_sch_tb_isim_beh.exe" -prj "C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/theProcessor_theProcessor_sch_tb_beh.prj" "work.theProcessor_theProcessor_sch_tb" "work.glbl" 

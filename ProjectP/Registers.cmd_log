@@ -1,0 +1,12 @@
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v} -lang verilog -prj ProjectP -o Registers.spl -module Registers -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl Registers.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v} -lang verilog -prj ProjectP -o Registers.spl -module Registers -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl Registers.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v} -lang verilog -prj ProjectP -o Registers.spl -module Registers -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl -w Registers.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v} -lang verilog -prj ProjectP -o Registers.spl -module Registers -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl -w Registers.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v} -lang verilog -prj ProjectP -o Registers.spl -module Registers -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl -w Registers.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.sym} 
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.v} -lang verilog -prj ProjectP -o Registers.spl -module Registers -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl -w Registers.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Registers.sym} 

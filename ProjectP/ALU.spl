@@ -1,0 +1,11 @@
+[Inputs]
+=input1[31:0]=
+=input2[31:0]=
+=ALUCtrl[3:0]=
+[Outputs]
+zero
+=ALU_result[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ALU
+

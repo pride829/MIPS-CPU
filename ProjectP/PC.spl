@@ -1,0 +1,10 @@
+[Inputs]
+clk
+rst
+=pc_next[31:0]=
+[Outputs]
+=pc_now[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel PC
+

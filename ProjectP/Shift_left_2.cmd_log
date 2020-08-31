@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Shift_left_2.v} -lang verilog -prj ProjectP -o Shift_left_2.spl -module Shift_left_2 -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl Shift_left_2.spl {C:/Users/user/Dropbox/study/Programmable logic design/ProjectP/Shift_left_2.sym} 
